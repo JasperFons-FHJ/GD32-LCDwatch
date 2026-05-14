@@ -88,9 +88,7 @@ firmware/
 | [doc/tutorial.md](doc/tutorial.md) | Mac 配置 GD32 开发教程 |
 | [doc/flashing.md](doc/flashing.md) | 烧录实操记录 |
 | [doc/lcd-watch.md](doc/lcd-watch.md) | LCD 手表界面配置 |
-| [doc/firmware_build.md](doc/firmware_build.md) | 构建记录 |
 
-PDF 版本见 `doc/*.pdf`。
 
 ## License
 
