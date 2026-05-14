@@ -1,0 +1,10 @@
+# Build outputs
+build/
+firmware/build/
+
+# macOS
+.DS_Store
+.vscode/
+
+# Vendor SDK (keep as external dependency)
+GD32F303RxT6 KIT/
