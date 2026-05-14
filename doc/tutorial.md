@@ -108,7 +108,7 @@ st-info --probe
 ```text
 Found 1 stlink programmers
 version:    V2J37S7
-serial:     E1007200D0D2139393740544
+serial:     XXXXXXXXXXXX
 flash:      262144 (pagesize: 2048)
 sram:       65536
 chipid:     0x414
@@ -144,7 +144,7 @@ dev-type:   F1xx_HD
 本项目已有原厂资料目录：
 
 ```text
-/Users/jasperfons/Ascent/project/project1/GD32F303RxT6 KIT
+.../GD32F303RxT6 KIT
 ```
 
 SDK 使用路径：
@@ -338,13 +338,13 @@ firmware/include/stdbool.h
 进入项目根目录：
 
 ```sh
-cd /Users/jasperfons/Ascent/project/project1
+cd ...
 ```
 
 配置工程：
 
 ```sh
-cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=/Users/jasperfons/Ascent/project/project1/firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
+cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=.../firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
 ```
 
 编译工程：
@@ -480,7 +480,7 @@ command -v arm-none-eabi-gcc
 建议使用绝对路径：
 
 ```sh
--DCMAKE_TOOLCHAIN_FILE=/Users/jasperfons/Ascent/project/project1/firmware/cmake/arm-none-eabi-gcc.cmake
+-DCMAKE_TOOLCHAIN_FILE=.../firmware/cmake/arm-none-eabi-gcc.cmake
 ```
 
 ### 18.3 找不到 `stdint.h`
@@ -525,7 +525,7 @@ firmware/include/stdbool.h
 日常开发推荐按以下流程：
 
 ```sh
-cd /Users/jasperfons/Ascent/project/project1
+cd ...
 cmake --build firmware/build
 st-flash --reset write firmware/build/gd32f303rct6_firmware.bin 0x08000000
 ```
@@ -533,7 +533,7 @@ st-flash --reset write firmware/build/gd32f303rct6_firmware.bin 0x08000000
 需要完整重配时：
 
 ```sh
-cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=/Users/jasperfons/Ascent/project/project1/firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
+cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=.../firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build firmware/build
 ```
 

@@ -6,5 +6,11 @@ firmware/build/
 .DS_Store
 .vscode/
 
-# Vendor SDK (keep as external dependency)
+# Vendor KIT (not needed, SDK is self-contained in firmware/sdk/)
 GD32F303RxT6 KIT/
+
+# Internal task notes
+soul.md
+
+# Raw photos
+*.HEIC

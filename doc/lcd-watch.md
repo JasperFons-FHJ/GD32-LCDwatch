@@ -158,8 +158,8 @@ LCD_ShowString(48U, 50U, 160U, 32U, 32U, "Jasper NB");
 执行：
 
 ```sh
-cd /Users/jasperfons/Ascent/project/project1
-cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=/Users/jasperfons/Ascent/project/project1/firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
+cd ...
+cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=.../firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build firmware/build
 ```
 

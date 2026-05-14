@@ -66,7 +66,7 @@ st-info --probe
 ```text
 Found 1 stlink programmers
 version:    V2J37S7
-serial:     E1007200D0D2139393740544
+serial:     XXXXXXXXXXXX
 flash:      262144 (pagesize: 2048)
 sram:       65536
 chipid:     0x414
@@ -80,7 +80,7 @@ dev-type:   F1xx_HD
 新增工程目录位于：
 
 ```text
-/Users/jasperfons/Ascent/project/project1/firmware
+.../firmware
 ```
 
 目录结构：
@@ -300,13 +300,13 @@ tick
 进入工程根目录：
 
 ```sh
-cd /Users/jasperfons/Ascent/project/project1
+cd ...
 ```
 
 配置 CMake：
 
 ```sh
-cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=/Users/jasperfons/Ascent/project/project1/firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
+cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=.../firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
 ```
 
 执行构建：

@@ -13,7 +13,7 @@
 本次操作对象：
 
 ```text
-项目目录：/Users/jasperfons/Ascent/project/project1
+项目目录：...
 芯片目标：GD32F303RCT6 / GD32F30x HD
 烧录工具：ST-Link
 固件文件：firmware/build/gd32f303rct6_firmware.bin
@@ -55,7 +55,7 @@ st-flash --version
 执行：
 
 ```sh
-cd /Users/jasperfons/Ascent/project/project1
+cd ...
 ```
 
 后续命令都在该目录下执行。
@@ -88,7 +88,7 @@ firmware/build/gd32f303rct6_firmware.bin
 如果第一次构建或 `firmware/build` 不存在，需要先执行完整配置命令：
 
 ```sh
-cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=/Users/jasperfons/Ascent/project/project1/firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
+cmake -S firmware -B firmware/build -G Ninja -DCMAKE_TOOLCHAIN_FILE=.../firmware/cmake/arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build firmware/build
 ```
 
@@ -105,7 +105,7 @@ st-info --probe
 ```text
 Found 1 stlink programmers
   version:    V2J37S7
-  serial:     E1007200D0D2139393740544
+  serial:     XXXXXXXXXXXX
   flash:      262144 (pagesize: 2048)
   sram:       65536
   chipid:     0x414
@@ -261,7 +261,7 @@ cbee46a74aaf4cbf79b1123ec4cea892f6a5cdc9b86f91249bc92ca1f08114b0  firmware/build
 如果只是日常开发后快速烧录，使用下面两条命令即可：
 
 ```sh
-cd /Users/jasperfons/Ascent/project/project1
+cd ...
 st-flash --reset write firmware/build/gd32f303rct6_firmware.bin 0x08000000
 ```
 
